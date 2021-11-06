@@ -74,13 +74,13 @@
 .card-body{
     max-width:300px;
 }
-.srcBttn{
+.searchBtn{
     width: 90px;
     height: 45px;
     border-radius: 10px;
     background: rgb(4, 117, 117);
 }
-.navFix{
+.nvBar{
     min-width: 100%;
     height: 125px;
     size: cover;
