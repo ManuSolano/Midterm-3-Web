@@ -94,13 +94,17 @@
             alt="No image available"
           />
         </div>
-        <div class=" textCard" style="font-size: 20px">
+        <div class="textCard" style="font-size: 20px">
           <h5 class="card-title" style="font-size: 20px"><%=superID %></h5>
           <h5 class="card-title" style="font-size: 30px">
             <%= name.charAt(0).toUpperCase() + name.slice(1) %>
           </h5>
-          <p style="word-wrap: break-word;"><strong>Aliases: </strong> <%= alias %></p>
-          <p style="word-wrap: break-word;"><strong>Affiliation(s):</strong> <%= affiliation %></p>
+          <p style="word-wrap: break-word">
+            <strong>Aliases: </strong> <%= alias %>
+          </p>
+          <p style="word-wrap: break-word">
+            <strong>Affiliation(s):</strong> <%= affiliation %>
+          </p>
         </div>
         <div
           style="
@@ -110,8 +114,7 @@
             font-size: 15px;
             text-align: justify;
           "
-        >
-        </div>
+        ></div>
       </div>
 
       <div
@@ -126,36 +129,51 @@
           );
         "
       >
-      <div id="wrapper3" class="biocard">
-        <div class="biocard" style="font-size: 30px; width: 200px;">
-          <h5 class="card-title header " style="text-align: center;  font-size: 40px; ">
-            Biography
-          </h5>
-          <div class="data vertical-center" style="font-size: 20px;">
-          <p class="card-text"><strong>Full name:</strong> <%= fullname %></p>
-          <p class="card-text"><strong>Place of birth:</strong> <%= birthplace %></p>
-          <p class="card-text"><strong>Gender: </strong><%= gender %></p>
-          <p class="card-text"><strong>Race: </strong><%= race %></p>
-          <p class="card-text"><strong>Weight: </strong><%= weight %></p>
-          <p class="card-text"><strong>Height: </strong><%= height %></p>
-          <p class="card-text"><strong>Eye color: </strong><%= eyecolor %></p>
-          <p class="card-text"><strong>Hair color: </strong><%= haircolor %></p></div>
+        <div id="wrapper3" class="biocard">
+          <div class="biocard" style="font-size: 30px; width: 200px">
+            <h5
+              class="card-title header"
+              style="text-align: center; font-size: 40px"
+            >
+              Biography
+            </h5>
+            <div class="data vertical-center" style="font-size: 20px">
+              <p class="card-text">
+                <strong>Full name:</strong> <%= fullname %>
+              </p>
+              <p class="card-text">
+                <strong>Place of birth:</strong> <%= birthplace %>
+              </p>
+              <p class="card-text"><strong>Gender: </strong><%= gender %></p>
+              <p class="card-text"><strong>Race: </strong><%= race %></p>
+              <p class="card-text"><strong>Weight: </strong><%= weight %></p>
+              <p class="card-text"><strong>Height: </strong><%= height %></p>
+              <p class="card-text">
+                <strong>Eye color: </strong><%= eyecolor %>
+              </p>
+              <p class="card-text">
+                <strong>Hair color: </strong><%= haircolor %>
+              </p>
+            </div>
+          </div>
+          <div class="biocard" style="font-size: 30px; width: 200px">
+            <h5
+              class="card-title header"
+              style="text-align: center; font-size: 40px"
+            >
+              Powerstats
+            </h5>
+            <div class="data vertical-center" style="font-size: 20px">
+              <div><strong>Intelligence:</strong> <%= intel %></div>
+              <div><strong>Strength:</strong> <%= strength %></div>
+              <div><strong>Speed:</strong> <%= speed %></div>
+              <div><strong>Durability:</strong> <%= durability %></div>
+              <div><strong>Power:</strong> <%= power %></div>
+              <div><strong>Combat:</strong> <%= combat %></div>
+            </div>
+          </div>
         </div>
-        <div class="biocard" style="font-size: 30px; width: 200px;">
-        <h5 class="card-title header" style="text-align: center;  font-size: 40px; ">
-          Powerstats
-        </h5>
-        <div class="data vertical-center" style="font-size: 20px;">
-        <div><strong>Intelligence:</strong> <%= intel %></div>
-        <div><strong>Strength:</strong> <%= strength %></div>
-        <div><strong>Speed:</strong> <%= speed %></div>
-        <div><strong>Durability:</strong> <%= durability %></div>
-        <div><strong>Power:</strong> <%= power %></div>
-        <div><strong>Combat:</strong> <%= combat %></div>
       </div>
-      </div>
-    </div>
-  </div>
     </div>
 
     <script
