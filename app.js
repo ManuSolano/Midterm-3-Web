@@ -26,7 +26,6 @@ app.get('/', (req, res) =>{
             var img = data.image.url;
             var fullname = data.biography["full-name"];
             var alias = data.biography.aliases;
-            console.log(alias);
             var name = data.name;
             var intel=data.powerstats.intelligence;
             var strength=data.powerstats.strength;
@@ -77,14 +76,14 @@ app.post('/', (req, res) =>{
         });
         response.on("end",()=> {
             try{
-
+            
             const dataAux = Buffer.concat(helper);
             const data = JSON.parse(dataAux);
             var superID = data.results[0].id;
+            currentId=superID;
             var name = data.results[0].name;
             var fullname = data.results[0].biography["full-name"];
             var alias = data.results[0].biography.aliases;
-            console.log(alias);
             var intel=data.results[0].powerstats.intelligence;
             var strength=data.results[0].powerstats.strength;
             var speed=data.results[0].powerstats.speed;
@@ -99,6 +98,7 @@ app.post('/', (req, res) =>{
             var weight = data.results[0].appearance.weight[1];
             var height = data.results[0].appearance.height[1];
             var img = data.results[0].image.url;
+            console.log(currentId);
             var affiliation=data.results[0].connections["group-affiliation"];
             res.render("index.html", {
                 superID:superID,
@@ -148,7 +148,6 @@ app.post('/next', (req, res) =>{
             var name = data.name;
             var fullname = data.biography["full-name"];
             var alias = data.biography.aliases;
-            console.log(alias);
             var intel=data.powerstats.intelligence;
             var strength=data.powerstats.strength;
             var speed=data.powerstats.speed;
@@ -208,7 +207,6 @@ app.post('/prev', (req, res) =>{
             var name = data.name;
             var fullname = data.biography["full-name"];
             var alias = data.biography.aliases;
-            console.log(alias);
             var intel=data.powerstats.intelligence;
             var strength=data.powerstats.strength;
             var speed=data.powerstats.speed;
